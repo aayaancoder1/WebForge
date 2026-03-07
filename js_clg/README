@@ -1,0 +1,98 @@
+# JavaScript — Notes
+
+---
+
+## What is JavaScript?
+
+JavaScript (JS) is a **scripting language** used to create dynamic and interactive web pages. Unlike compiled languages, scripting languages are **directly interpreted** by the browser's JavaScript engine — there is no separate compilation step.
+
+JS code is embedded within HTML and runs directly in the browser, making it the backbone of frontend web development.
+
+---
+
+## Java vs JavaScript
+
+Despite the similar name, Java and JavaScript are very different:
+
+| | Java | JavaScript |
+|---|---|---|
+| Type | Object-Oriented Language | Object-Based Language |
+| Inheritance & Polymorphism | ✅ Supported | ❌ Not supported |
+| Execution | Compiled | Interpreted |
+
+---
+
+## A Brief History
+
+**Netscape (Brendan Eich)** created the language in 1995, originally calling it **LiveScript**. It was later renamed to **JavaScript** as a marketing decision to ride the popularity of Java at the time.
+
+---
+
+## Applications
+
+JavaScript is used to build:
+
+- Dynamic and interactive web pages
+- Web and desktop applications
+- Browser extensions
+- Games
+
+---
+
+## Type System
+
+JavaScript is a **loosely typed** (dynamically typed) language — you do not need to explicitly declare the data type of a variable.
+
+---
+
+## Data Types
+
+JavaScript has the following primitive and non-primitive data types:
+
+- `Number`
+- `String`
+- `Undefined`
+- `Null`
+- `BigInt`
+- `Symbol`
+- `Object`
+
+---
+
+## Variable Keywords (ES6)
+
+ES6 introduced modern ways to declare variables:
+
+| Keyword | Scope | Re-assignable | Re-declarable |
+|---|---|---|---|
+| `var` | Function | ✅ | ✅ |
+| `let` | Block | ✅ | ❌ |
+| `const` | Block | ❌ | ❌ |
+
+---
+
+## Advantages
+
+- **Fast** — interpreted directly by the browser engine with modern JIT compilation, making it quick compared to many other scripting languages
+- **No setup required** — runs natively in every browser
+- **Versatile** — used for both frontend and backend (Node.js) development
+
+---
+
+## Disadvantages
+
+- **No security** — JS code runs on the client side, meaning anyone can view and inspect your source code through browser developer tools
+- **Inconsistent browser support** — behaviour can vary slightly across different browsers
+
+---
+
+## Standards & Governing Bodies
+
+| Body | Responsible For |
+|---|---|
+| **ECMA International** | JavaScript (ES6 and beyond) |
+| **W3C** (World Wide Web Consortium) | HTML & CSS standards |
+
+> The current widely-used version of JavaScript is **ES6 (ECMAScript 2015)**, which introduced `let`, `const`, arrow functions, classes, and much more.
+
+---
