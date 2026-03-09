@@ -1,0 +1,20 @@
+<html>
+<form name="f1" novalidate>
+	<label>Name: <input type="text" name="n">
+	</label>
+	<button> Submit</button>
+</form>
+<script>
+	document.f1.onsubmit = function () {
+		if (this.n.value == "") {
+			alert("Enter the name: ");
+			this.n.focus();
+			return false;
+		}
+		else {
+			alert("OK" + this.n.value);
+		}
+	}
+</script>
+
+</html>

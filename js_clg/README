@@ -96,3 +96,6 @@ ES6 introduced modern ways to declare variables:
 > The current widely-used version of JavaScript is **ES6 (ECMAScript 2015)**, which introduced `let`, `const`, arrow functions, classes, and much more.
 
 ---
+
+form validation is the process of validating form data on form submit
+validation of inputs, select input, radiobutton, checkbox and so on HTML elements
