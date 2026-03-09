@@ -1,0 +1,26 @@
+<html>
+
+<body>
+	<form name="f1">
+		<Label>Male</Label>
+		<input type="radio" name="g"></br>
+		<Label>Female</Label>
+		<input type="radio" name="g"></br>
+		<button type="reset">reset</button>
+		<button type="submit">Submit</button>
+	</form>
+
+	<script>
+		document.f1.onsubmit = function () {
+			if (this.g[0].checked == false && this.g[1].checked == false) {
+				alert("Choose Gender");
+				return false;
+			}
+			else {
+				alert("OK");
+			}
+		}
+	</script>
+</body>
+
+</html>
