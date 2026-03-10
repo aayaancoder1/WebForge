@@ -1,0 +1,30 @@
+<html>
+
+<body>
+	<form name="f1">
+		<label>
+			<select name="items">
+				<option value=" " selected disabled>Choose Menu</option>
+				<option>Idli</option>
+				<option>Dosa</option>
+				<option>Wada</option>
+			</select>
+		</label>\
+		<button>Submit</button>
+	</form>
+
+	<script>
+		document.f1.onsubmit = function () {
+			if (this.items.value == "") {
+				alert("Choose the items: ");
+				this.items.focus();
+				return false;
+			}
+			else {
+				alert("OK");
+			}
+		}
+	</script>
+</body>
+
+</html>
