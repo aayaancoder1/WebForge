@@ -1,0 +1,22 @@
+<html>
+
+<body bgcolor="lime" text="blue" onmousedown="fun()" onmouseup="fun2()">
+	<h4 align="center">Please click anywhere on the webpage</h4>
+
+	<script>
+		var x, y, x1, y1;
+		function fun() {
+			x = event.screenX;
+			y = event.screenY;
+		}
+		function fun2() {
+			x1 = event.screenX;
+			y1 = event.screenY;
+
+			alert("Your mouse at x " + x + " and y " + y + "and dragged at " + x1 + " and y " + y1);
+		}
+	</script>
+
+</body>
+
+</html>

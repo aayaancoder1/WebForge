@@ -1,0 +1,30 @@
+<html>
+
+<body>
+	<form name="f1">
+		<label>Email: </label>
+		<input type="text" name="email"; placeholder = "xyz@gmail.com">
+		<button>Submit</button>
+	</form>
+	<script>
+		document.f1.onsubmit = function () {
+			var email = document.f1.email.value;
+			var patt = /^[a-z A-Z 0-9 . _]+@[a-z A-Z 0-9 . _]+.[a-z A-Z]{2,3}$/; 
+			if (email == " ") {
+				alert("Enter you email: ");
+				this.email.focus();
+				return false;
+			}
+			else if (!patt.test(email)) {
+				alert("Enter Valid Email");
+				this.email.focus();
+				return false;
+			}
+			else {
+				alert("OK");
+			}
+		}
+	</script>
+</body>
+
+</html>

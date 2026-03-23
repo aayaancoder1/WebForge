@@ -1,0 +1,15 @@
+<html>
+
+<body bgcolor="teal" onmousemove="fun()">
+	<blockquote>
+		X-axis and y-axis positions will be displayed when you move the mouse pointer on the webpage
+		position:<input type="text" id="t1"></blockquote>
+	<script>
+		function fun() {
+			document.getElementById("t1").value = "x= " + event.screenX + " and y= " + event.screenY;
+		}
+	</script>
+
+</body>
+
+</html>
