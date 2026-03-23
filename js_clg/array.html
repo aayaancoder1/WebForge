@@ -5,25 +5,64 @@
 		function fun() {
 			var d = [];
 			var d1 = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
-			document.writeln(d);
-			document.writeln(d1);
 
-			document.writeln(d.length);
-			document.writeln(d1.length);
+			// Adding "<br>" to force a new line in the browser display
+			document.writeln(d + "<br>");
+			document.writeln(d1 + "<br>");
+
+			document.writeln(d.length + "<br>");
+			document.writeln(d1.length + "<br>");
+
 			d1.length = 7;
-			document.writeln(d1);
-			document.writeln(d1.at(0));
-			document.writeln(d1.at(-1));
+			document.writeln(d1 + "<br>");
+			document.writeln(d1.at(0) + "<br>");
+			document.writeln(d1.at(-1) + "<br>");
 
 			var d2 = ["oop", "c++", "java", "python"];
 			d2.sort();
-			document.writeln(d2);
-			// to sort the numeric array, pass a callback function in sort method.
-			// there are two arguments in the callback function; a and b
-			
-		}
-	</script>
+			document.writeln(d2 + "<br>");
 
+			var d4 = [10, 5, 20, 15];
+			function srt(a, b) {
+				return a - b;
+			}
+			d4.sort(srt);
+			document.writeln(d4 + "<br>");
+			document.writeln(d4.lastIndexOf(9) + "<br>");
+			d4.shift();
+			document.writeln(d4 + "<br>");
+			d4.unshift(100);
+			document.writeln(d4 + "<br>");// will add element at 0th index
+			document.writeln(d4.pop() + "<br>"); // will remove last element and return it
+			document.writeln(d4.push(200) + "<br>"); // will add element at the end and return new length of array
+			document.writeln(d4.reverse() + "<br>"); // will reverse the array
+			document.writeln(d4.splice(0, 1) + "<br>"); // will return a new array from index 1 to 2 (3 is not included)
+			// splice is used to add or remove n number of elements form an array at any position
+			var d5 = d4.with(1, 25); // will return a new array with 25 at index 1 and rest of the elements will be same as d4
+			document.writeln(d4 + "<br>");
+			document.writeln(d5 + "<br>");
+			// it will change the value at a given index and return a new array and does not change the actual array
+
+			document.writeln(d4.slice(0) + "<br>"); // will return a new array with elements from index 0 to 1 (2 is not included)
+			document.writeln(d4.slice(1) + "<br>"); // will return a new array with elements from index 1 to end of the array
+			document.writeln(d4.slice(0, 2) + "<br>"); // will return a new array with elements from index 0 to 1 (2 is not included)
+
+			document.writeln(d4.join() + "<br>"); // will return a string with all the elements of the array separated by comma
+			document.writeln(d4.join("-") + "<br>"); // will return a string
+			// it is used to convert an array into string with all elements with all elements separated by a specified separator
+			// default separator is comma
+			var x = [1, 2, 3];
+			var y = [4, 5, 6];
+			var z = x.concat(y); // will return a new array with elements of x and y
+			document.writeln(z + "<br>");
+
+			var c = [9, 10, 11, [1, 2, 3]];
+			d = c.flat(); // will return a new array with all the elements of the array and sub arrays in a single array
+			document.writeln(d + "<br>");
+			// creates a new array from existing nested array upto a specific depth
+		}
+
+	</script>
 </head>
 
 <body>
