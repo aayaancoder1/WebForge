@@ -1,0 +1,41 @@
+<html>
+
+<head>
+
+	<script>
+		// map, reduce, filter, find
+		function fun() {
+			var x1 = [1, 2, 3, 4, 5];
+
+			// map is used to create a new array with the results of calling a provided function on every element in the calling array
+			// without using traditional loop
+			x2 = x1.map(i => i * i);
+			document.writeln(x1 + "<br>");
+			document.writeln(x2 + "<br>");
+
+			// it reduces an array to a single value by applying a callback function for each element
+			document.writeln(x1.reduce((a, b) => { return a + b }) + "<br>"); // will return the sum of all the elements in the array
+
+			const p = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+			const q = p.filter(i => i.length >= 4); // will return a new array with all the elements of the array that satisfy the condition
+			document.writeln(q + "<br>");
+			document.writeln(x1.filter(i => i % 2 === 0) + "<br>"); // will return a new array with all the elements of the array that satisfy the condition
+
+			// returns the first match element based on the condition
+			document.writeln([2, 4, 6, 8].find(i => i >= 5) + "<br>"); // will return the first element in the array that satisfies the condition
+			document.writeln([2, 4, 6, 8].find(i => i < 2) + "<br>"); // will return undefined if no element satisfies the condition
+
+			document.writeln(x1.findIndex(i => i >= 3) + "<br>"); // will return the index of the first element in the array that satisfies the condition
+			document.writeln(x1.some(i => i > 4) + "<br>"); // will return true if at least one element in the array satisfies the condition
+			document.writeln(x1.every(i => i > 0) + "<br>"); // will return true if all the elements in the array satisfies the condition
+
+		}
+	</script>
+</head>
+
+<body>
+	<script>
+		fun();
+	</script>
+
+</html>
