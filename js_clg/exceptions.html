@@ -3,23 +3,46 @@
 <head>
 
 	<script>
-		function test() {
-			try {
-				var a = [10, 20, 30, 40, 50];
-				document.writeln("<br>" + a);
-				document.writeln("<br>" + b);
-			}
-			catch (error) {
-				document.writeln("<br>" + error.message);
+		// function test1() {
+		// 	try {
+		// 		var a = [10, 20, 30, 40, 50];
+		// 		document.writeln("<br>" + a);
+		// 		document.writeln("<br>" + b);
+		// 	}
+		// 	catch (error) {
+		// 		document.writeln("<br>" + error.message);
 
-			}
-		}
+		// 	}
+		// }
 	</script>
 </head>
 
-<body>
+<body bgcolor="teal" text="white">
+	<h4>Enter the value as Zero</h4>
+	value 1: <input type="text" id="a"><br><br>
+	value 2: <input type="text" id="b"><br><br>
+	Answer: <input type="button" onclick="test1()">Click me</button><br><br>
 	<script>
-		test();
+		function test1() {
+
+			var x = parseInt(document.getElementById("a").value);
+			var y = parseInt(document.getElementById("b").value);
+
+			try {
+				if (x == 0) {
+					throw "Division is Zero";
+				}
+				if (y == 0) {
+					throw "To be divided by Zero";
+				}
+			}
+			catch (error) {
+				alert("error");
+			}
+			finally {
+				document.writeln("The values of x and y are " + x + " and " + y);
+			}
+		}
 	</script>
 
 </html>
