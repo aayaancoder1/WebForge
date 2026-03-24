@@ -1,0 +1,26 @@
+<html>
+
+<head>
+
+	<script>
+
+		function test() {
+			var days = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+			days.forEach(i => document.writeln(i + "<br>")); // will print all the elements in the array
+			days.forEach((i, j) => document.writeln(i + " is at index " + j + "<br>")); // will print all the elements in the array with their index
+			for (var i in days) {
+				document.writeln(i + "    "); // will print the index of all the elements in the array using for in loop
+				document.writeln(days[i] + "<br>"); // will print all the elements in the array using for in loop
+			}
+
+
+		}
+	</script>
+</head>
+
+<body>
+	<script>
+		test();
+	</script>
+
+</html>
